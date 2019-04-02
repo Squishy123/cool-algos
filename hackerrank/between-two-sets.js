@@ -32,12 +32,7 @@ function getTotalX(a, b) {
 
     let tot = [];
     for (let i = lcmA; i <= gcdB; i += lcmA) {
-        let check = true;
-        b.forEach((be) => {
-            if (be % i != 0)
-                check = false;
-        });
-        if (check)
+        if(gcdB%i == 0)
             tot.push(i);
     }
 
