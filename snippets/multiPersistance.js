@@ -16,7 +16,7 @@ function multiPersistance(num) {
 console.log(multiPersistance(39)); 
 
 //should be 10
-console.log(multiPersistance(3778888999));
+console.log(multiPersistance(3778888999));  
 
 //should be 11
 console.log(multiPersistance(277777788888899)); 
