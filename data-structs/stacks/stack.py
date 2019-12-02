@@ -6,8 +6,6 @@ class Node:
         self.next = ref
 
 # Implementation of Stack using a LinkedList
-
-
 class Stack:
     def __init__(self):
         self.head = None

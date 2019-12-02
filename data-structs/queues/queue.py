@@ -11,12 +11,27 @@ class Queue:
         self.head=None
         self.size=0
     
-    def push(self, value):
+    def enqueue(self, value):
         def aux(node):
             if(node.next == None):
                 n = Node(value)
                 node.next=n
-            return aux(node.next)
+            else:
+                return aux(node.next)
         return aux(self.head)
 
-    def peek()
+    def dequeue(self):
+        def aux(node):
+            if(node.next == None):
+                n=node.value
+                node.next
+                
+
+    def peek(self):
+        def aux(node):
+            if(node.next == None):
+                return node.value
+            else:
+                return aux(node.next)
+
+        return aux(self.head)
